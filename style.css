@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #e9f9dc;
+}
+
+.about .photo img {
+    border-radius: 80%;
+    width: 180px;
+    height: 200px;
+}
+
+.about .description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projects {
+    padding: 50px 20px;
+    background-color: #eaeaea;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hobbies {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about .description {
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .navbar ul {
+        gap: 40px;
+    }
+}
